@@ -1,0 +1,249 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div id="home" class="banner-area section-padding">
+        <div class="bg-overlay black"></div>
+        <div class="containter">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="welcome-text">
+                        <div class="name-area wow fadeInDown" data-wow-delay="0.4s">Hello, I am Ajinkya Appa</div>
+                        <h1 class="wow fadeInDown" data-wow-delay="0.2s">A 3rd year undergraduate CS Student at WCE, Sangli</h1>
+                        <a href="#about" class="my-btn-1 wow fadeInDown" data-wow-delay="0.6s">Learn more</a>
+                        <a href="#contact" class="my-btn-2 wow fadeInDown" data-wow-delay="0.8s">Get in touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {#    About section#}
+
+    <div id="about" class="about-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sn-8 col-xs-12 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="about-left">
+                        <h2 class="section-title">About Me</h2>
+                        <div class="line"></div>
+                        <h4>Computer Science enthusiast || A 3rd year Undergraduate CS Student || Web enthusiast || ICCSP Research paper on Ethereum Blockchain</h4>
+                        <p>I am a 3rd-year Computer Science and Engineering Undergraduate student at Walchand College of Engineering, Sangli. Computer Science and Web Development enthusiast. Interested in Algorithms & Data Structure and Blockchain.
+                            My portfolio is representation of all that i have accomplished as a science and engineering student.. </p>
+                        <a href="static/images/ajresume.png" download>Download CV&nbsp;<i class="fa fa-download"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-5 visible-md visible-lg wow fadeInDown" data-wow-delay="0.6s">
+                    <div class="profile">
+                        <img src="static/images/dp.jpg" width="500" height="600" alt="Profile image" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {#    Project Section#}
+    <div id="services" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center">
+                        <h2>Project</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-4 no-padding">
+                    <div class="gallery-items">
+                        <a class="view img" href="{{ work.image.url }}">
+                            <img src="static/images/asach.jpeg" alt="work image">
+                        </a>
+
+                        <div class="gallery-text">
+                            <h2>{{ work.title }}</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-14 col-xs-12 no-padding">
+                    <div class="gallery-items">
+                        <a class="view img" href="{{ work.image.url }}">
+                            <img src="static/images/project.png" alt="work image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="single-service wow fadeInDown" data-wow-delay="0.2s">
+                            <i class="icon icon-wallet"></i>
+                            <h2>Decentralised Freelancing Website</h2>
+                            <p><b>Desktop</b> application to eliminate 3rd Party from Freelancing<br>
+                                <b>Peer to Peer</b> communication between Client and Freelancer<br>
+                                <b>Application</b> built using Ethereum Blockchain,HTML,CSS<br><br></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="single-service wow fadeInDown" data-wow-delay="0.2s">
+                            <i class="icon icon-wallet"></i>
+                            <h2>Multimedia Encryption using Hybrid Cryptography Approach</h2>
+                            <p><b>Implementation</b> of a system capable of encryption and decryption of multimedia data(Text,Images,Video,Audio)<br>
+                                <b>Hybrid</b> model based on the amalgamation of symmetric encryption techniques such as AES and asymmetric techniques such as ECC<br>
+                                <b>This</b> is an application made using Django and NodeJs<br></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="single-service wow fadeInDown" data-wow-delay="0.2s">
+                            <i class="icon icon-wallet"></i>
+                            <h2>Voter MANAGEMENT SYSTEM</h2>
+                            <p>Voter Management System providing the facilities of a polling info of Users. Developed using Java language.</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    {#    resume Section#}
+    <div id="portfolio" class="portfolio-area section-padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header">
+                        <h2>Resume</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12 no-padding">
+                    <div class="gallery-items">
+                        <a class="view img" href="{{ work.image.url }}">
+                            <img src="static/images/asach.jpeg" alt="work image">
+                        </a>
+
+                        <div class="gallery-text">
+                            <h2>{{ work.title }}</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-5 col-xs-14 no-padding">
+                    <div class="gallery-items">
+                        <a class="view img" href="{{ work.image.url }}">
+                            <img src="static/images/ajresume.png" alt="work image">
+                        </a>
+
+                        <div class="gallery-text">
+                            <h2>{{ work.title }}</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {#    Blog Section#}
+    <div id="blog" class="portfolio-area section-padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12   ">
+                    <div class="section-header">
+                        <h2>Blog</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-4 no-padding">
+                    <div class="gallery-items">
+                        <a class="view img" href="{{ work.image.url }}">
+                            <img src="static/images/asach.jpeg" alt="work image">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-14 col-xs-12 no-padding">
+                    <div class="gallery-items">
+                        <a class="view img" href="{{ work.image.url }}">
+                            <img src="static/images/edu.png" height="200" width="200" alt="work image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+            </br>
+            </div>
+            <div class="row">
+                <div class="col-md-19 col-sm-50 col-xs-20 no-padding">
+                    <div class="gallery-items">
+                        <a class="view img" href="{{ work.image.url }}">
+                            <p>"<b>Front-end</b> The front end of a website is the part that users interact with. Everything that you see when you're navigating around the Internet, from fonts and colors to dropdown menus and sliders, is a combo of HTML, CSS, and JavaScript being controlled by your computer's browser. SKILLS AND TOOLS</p>
+                            <p>" <b>Back-end</b>Back-end Development refers to the server-side development. It is the term used for the behind-the-scenes activities that happen when performing any action on a website. ... Backend developer focuses on databases, scripting, and the architecture of websites.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+                        
+                 
+    {#    Contact section#}
+    <div id="contact" class="contact-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center">
+                        <h2>Contact Me</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 box-contact-form">
+
+                    <form id="contact-form" method="post" action="#">
+
+                        <div class="messages"></div>
+
+                        <div class="controls">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group wow fadeInDown" data-wow-delay="0.2s">
+                                        <input id="form_name" type="text" name="name" class="form-control"
+                                               placeholder="Enter your full name *" required="required"
+                                               data-error="Fullname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group wow fadeInDown" data-wow-delay="0.4s">
+                                        <input id="form_email" type="email" name="email" class="form-control"
+                                               placeholder="Enter your email *" required="required"
+                                               data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group wow fadeInUp" data-wow-delay="0.6s">
+                                        <textarea id="form_message" name="message" class="form-control"
+                                                  placeholder="Your Message *" rows="4" required="required"
+                                                  data-error="Leave a message for me"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button class="btn btn-send" value="">Send message</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+
+{% endblock %}
